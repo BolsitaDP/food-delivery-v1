@@ -1,0 +1,23 @@
+.form__group input {
+  color: var(--primary);
+}
+
+.form__group input::placeholder {
+  color: var(--primary);
+}
+
+.link__register {
+  color: var(--secondary);
+}
+
+.link__register:hover {
+  color: var(--secondary);
+  text-decoration: underline;
+}
+
+.error__text {
+  color: var(--secondary);
+  font-size: 0.6rem;
+  margin-top: 5px;
+  font-weight: 600;
+}

@@ -1,10 +1,21 @@
+.checkout__title {
+  color: var(--primary);
+}
+
+.checkout__form input,
+.checkout__form input::placeholder {
+  color: var(--primary) !important;
+}
+
 .checkout__bill {
-  background: #fde4e4;
+  background: var(--secondary);
   padding: 30px;
+  border-radius: 5px;
+  color: var(--background);
 }
 
 .checkout__total {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--background);
   padding-top: 30px;
 }
 
