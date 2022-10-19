@@ -10,6 +10,7 @@ import { cartUiActions } from "../../store/shopping-cart/cartUiSlice";
 
 import "../../styles/header.css";
 import { useRef } from "react";
+import Theme from "../Theme/Theme";
 
 const nav__links = [
   {
@@ -60,7 +61,7 @@ const Header = () => {
 
   return (
     <header className="header" ref={headerRef}>
-      <Container>
+      <Container heigth={120}>
         <div className="nav_wrapper d-flex align-items-center justify-content-between">
           <div className="logo">
             <img src={logo} alt="logo" />
@@ -84,6 +85,8 @@ const Header = () => {
           </div>
           {/* ======= nav right icons ======== */}
           <div className="nav__right d-flex align-items-center gap-4">
+            <Theme />
+
             <span className="cart__icon" onClick={toggleCart}>
               <i className="ri-shopping-basket-line"></i>
               <span className="cart__badge">{totalQuantity}</span>

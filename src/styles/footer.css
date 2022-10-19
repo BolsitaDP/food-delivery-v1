@@ -13,11 +13,12 @@
   font-weight: 600px;
   font-size: 1rem;
   margin-bottom: 15px;
+  color: #fafafa;
 }
 
 .footer__logo p {
   font-size: 0.9rem;
-  color: var(--primary);
+  color: #1b1b1b;
   line-height: 28px;
 }
 
@@ -28,16 +29,16 @@
 .delivery__time-item span {
   font-weight: 600;
   font-size: 1rem;
-  color: var(--primary);
+  color: #fafafa;
 }
 
 .delivery__time-item p {
-  color: var(--primary);
+  color: #1b1b1b;
 }
 
 .footer__title {
   font-size: 1.1rem;
-  color: var(--primary);
+  color: #fafafa;
   font-weight: 600;
 }
 
@@ -84,7 +85,7 @@
 
 .copyright__text {
   font-size: 0.8rem;
-  color: var(--secondary);
+  color: #1b1b1b;
 }
 
 @media only screen and (max-width: 992px) {

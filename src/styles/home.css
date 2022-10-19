@@ -1,13 +1,22 @@
+.hero__content {
+  color: var(--primary);
+}
+
 .feature__subtitle {
   color: var(--secondary);
 }
 
 .feature__title span {
   color: var(--secondary);
+  transition: 1s;
 }
 
 .features__text {
-  color: var(--gray);
+  color: var(--primary);
+}
+
+.feature__item h5 {
+  color: var(--secondary);
 }
 
 .feature__item p {
@@ -27,7 +36,8 @@
   outline: none;
   padding: 7px 20px;
   background: transparent;
-  color: var(--white);
+  color: var(--background);
+  font-weight: 600;
 }
 
 .food__category button img {
@@ -36,7 +46,7 @@
 }
 
 .foodBtnActive {
-  background: var(--white) !important;
+  background: var(--background) !important;
   border-radius: 5px;
   color: var(--secondary) !important;
 }
@@ -50,9 +60,14 @@
   line-height: 28px;
 }
 
+.list-group-item {
+  background-color: transparent !important;
+}
+
 .choose__us-title {
   font-weight: 600;
   margin-bottom: 10px;
+  color: var(--primary);
 }
 
 .choose__us-title i {

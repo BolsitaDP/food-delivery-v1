@@ -19,11 +19,11 @@ const Cart = () => {
           <Row>
             <Col lg="12">
               {cartItems.length === 0 ? (
-                <h5 className="text-center">Your cart is empty</h5>
+                <h5 className=" cart__text text-center">Your cart is empty</h5>
               ) : (
-                <table className="table table-bordered">
+                <table className="table table-bordered ">
                   <thead>
-                    <tr>
+                    <tr className="cart__text ">
                       <th>Image</th>
                       <th>Product Title</th>
                       <th>Price</th>
@@ -39,7 +39,7 @@ const Cart = () => {
                 </table>
               )}
 
-              <div className="mt-4">
+              <div className=" cart__text mt-4">
                 <h6>
                   Subtotal: $
                   <span className="cart__subtotal">{totalAmount}</span>
@@ -70,7 +70,7 @@ const Tr = (props) => {
     dispatch(cartActions.deleteItem(id));
   };
   return (
-    <tr>
+    <tr className="cart__text ">
       <td className="text-center cart__img-box">
         <img src={image01} alt="" />
       </td>
@@ -78,7 +78,7 @@ const Tr = (props) => {
       <td className="text-center">${price}</td>
       <td className="text-center">{quantity}px</td>
       <td className="text-center cart__item-del">
-        <i class="ri-delete-bin-line" onClick={deleteItem}></i>
+        <i className="ri-delete-bin-line" onClick={deleteItem}></i>
       </td>
     </tr>
   );

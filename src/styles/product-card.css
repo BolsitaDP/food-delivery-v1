@@ -2,7 +2,13 @@
   border: 1px solid var(--tertiary);
   text-align: center;
   padding: 30px;
+  border-radius: 5px;
   cursor: pointer;
+  color: var(--primary);
+}
+
+.product__item a:hover {
+  color: var(--primary);
 }
 
 .product__img {
@@ -33,7 +39,7 @@
   border: none;
   padding: 7px 25px;
   background: var(--secondary);
-  color: var(--white);
+  color: var(--background);
   border-radius: 5px;
   font-size: 0.9rem;
 }
