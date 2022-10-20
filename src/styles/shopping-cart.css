@@ -14,19 +14,20 @@
   right: 0;
   width: 400px;
   height: 100%;
-  background: var(--white);
+  background: var(--background);
+  border: 1px solid var(--tertiary);
   z-index: 99999;
 }
 
 .cart__close {
   width: 100%;
   height: 60px;
-  padding: 10px 20px;
+  padding: 20px 20px;
 }
 
 .cart__close span i {
   font-size: 1.1rem;
-  background: var(--black);
+  background: var(--tertiary);
   padding: 5px;
   border-radius: 50%;
   color: var(--white);
@@ -34,8 +35,10 @@
 }
 
 .cart__item-list {
+  padding-top: 10px;
   height: calc(100vh - 140px);
   overflow-y: scroll;
+  color: var(--primary);
 }
 
 .cart__bottom {
@@ -62,7 +65,7 @@
   border: none;
   padding: 4px 20px;
   border-radius: 5px;
-  background: var(--white);
+  background: var(--background);
   color: var(--primary);
 }
 

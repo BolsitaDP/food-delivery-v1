@@ -12,21 +12,40 @@
 }
 
 html {
-  --primary: #212245;
-  --primary-shadow: #21224580;
-  --secondary: #df2020;
-  --tertiary: #fde4e4;
-  --white: #fff;
-  --black: #000;
-  --shadow: #00000079;
-  --gray: #777;
 }
 
 /* base style */
 
 body {
-  background: #fcfcfc;
   font-family: "Istok Web", sans-serif;
+}
+
+.light {
+  --primary: #1b1b1b;
+  --primary-shadow: #1b1b1b79;
+  --secondary: #ff6a5c;
+  --tertiary: #ebaeae;
+  --white: #fff;
+  --black: #000;
+  --shadow: #00000079;
+  --gray: #777;
+  --background: #fafafa;
+  background: #fafafa;
+  transition: 1s;
+}
+
+.dark {
+  --primary: #fafafa;
+  --primary-shadow: #fafafa7e;
+  --secondary: #ff6a5c;
+  --tertiary: #dd9c9c;
+  --white: #fff;
+  --black: #000;
+  --shadow: #00000079;
+  --gray: rgb(151, 151, 151);
+  --background: #1b1b1b;
+  background: #1b1b1b;
+  transition: 1s;
 }
 
 h1,

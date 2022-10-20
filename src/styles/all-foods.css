@@ -1,16 +1,44 @@
 .search__widget,
 .sorting__widget select {
-  padding: 7px 15px;
+  padding: 7px 25px 7px 15px;
   border: 1px solid var(--tertiary);
   border-radius: 5px;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  color: var(--primary);
+  transition: 1s;
+}
+
+.sorting__widget {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sorting__widget p {
+  position: relative;
+  top: 8px;
+  right: 20px;
+  color: var(--primary);
 }
 
 .sorting__widget select {
   cursor: pointer;
+  outline: none;
+  background: var(--background);
+  color: var(--primary);
 }
 
 .search__widget input {
   border: none;
+  background: var(--background);
+  transition: 1s;
+  color: var(--primary);
+}
+
+.search__widget input::placeholder {
+  color: var(--primary);
 }
 
 .search__widget input:focus {

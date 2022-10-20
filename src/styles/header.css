@@ -9,7 +9,7 @@
 }
 
 .logo img {
-  width: 40%;
+  width: 30%;
   object-fit: contain;
   margin-bottom: 40px;
 }
@@ -20,6 +20,7 @@
   color: var(--primary);
   margin-top: -40px !important;
   margin-bottom: 0;
+  transition: 1s;
 }
 
 .menu a {
@@ -39,10 +40,13 @@
 
 .cart__icon i,
 .user i,
-.mobile__menu i {
+.mobile__menu i,
+.sun__icon i,
+.moon__icon i {
   font-size: 1.3rem;
   color: var(--primary);
   cursor: pointer;
+  transition: 1s;
 }
 
 .cart__icon {
@@ -74,9 +78,11 @@
   position: sticky;
   top: 0;
   left: 0;
-  background: var(--white);
+  background: var(--background);
   z-index: 999;
   box-shadow: 5px 5px 15px -5px var(--tertiary);
+  /* height: 120px; */
+  transition: background 1s;
 }
 
 @media only screen and (max-width: 992px) {
@@ -106,7 +112,7 @@
     right: 0;
     width: 250px;
     height: 100%;
-    background-color: var(--white);
+    background-color: var(--background);
     flex-direction: column;
     justify-content: center;
     align-items: center;

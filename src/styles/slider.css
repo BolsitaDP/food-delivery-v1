@@ -11,6 +11,10 @@
   object-fit: cover;
 }
 
+.slider__content h6 {
+  color: var(--primary) !important;
+}
+
 @media only screen and (max-width: 768px) {
   .review__text {
     font-size: 0.8rem;

@@ -1,0 +1,6 @@
+.sun__icon i,
+.moon__icon i {
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: var(--primary);
+}
